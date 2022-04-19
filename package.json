@@ -4,7 +4,8 @@
   "description": "Projet 2 - OhMyFood - OpenClassRoom",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch style.scss style.css"
+    "sass": "sass --watch style.scss style.css",
+    "prefix": "postcss style.css --use autoprefixer -d prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/vatto46/P3_THIBAULT_ARTHUR/issues"
   },

@@ -94,6 +94,7 @@ section h2 {
   padding: 13px;
   margin: 25px 15px 0px 15px;
   font-weight: 600;
+  box-shadow: 2px 1px 8px -3px #00000080;
   background-color: rgba(218, 218, 218, 0.301);
 }
 .liste .numero {
@@ -123,7 +124,7 @@ section h2 {
   justify-content: space-evenly;
 }
 .preparation a :hover{
-  background: rgba(145, 85, 218, 0.150);
+  background: rgba(144, 69, 236, 0.37);
 }
 .preparation a :hover .fa-solid{
   color: #9356dc;
@@ -160,7 +161,14 @@ a :hover .numero {
 }
 .fa-heart:hover{
   color: #9356dc;
+  animation: fill 0.3s ease-in-out;
+  display: inline-block;
   opacity: 1;
+  background: linear-gradient(354deg, #9356dc 19%, #ff79da 100%);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 .coeur_hover{
   margin-top: 23px;
@@ -181,6 +189,9 @@ footer {
 footer h3 {
   font-family: "Shrikhand", cursive;
   font-size: x-large;
+}
+footer a{
+  color: white;
 }
 footer .fa-solid {
   margin-right: 10px;

@@ -2,9 +2,21 @@
 @keyframes half-spin{
   0%{
     transform: rotate(-180deg);
+    opacity: 0;
   }
   100%{
     transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes list{
+  0%{
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 body {
@@ -67,6 +79,8 @@ header .titre .fleche {
   border-radius: 15px;
   padding: 10px;
   overflow: hidden;
+  box-shadow: 2px 1px 8px -3px #00000080;
+  animation: list 1s 0.5s;
 }
 .assiette:hover .valider{
   margin-right: -10px;
@@ -74,9 +88,15 @@ header .titre .fleche {
 .assiette:hover .fa-regular{
   animation: half-spin 0.7s;
 }
+.assiette p{
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .valider{
   background-color: #99e2d0;
-  margin: -35px -78px -10px 2px;
+  margin: -35px -78px -10px 10px;
   width: 68px;
   height: 65px;
   float: right;
@@ -135,9 +155,22 @@ footer .fa-solid {
 footer p{
   padding: 4px;
 }
+footer a{
+  color: white;
+}
 .coeur {
   margin-right: 30px;
   font-size: xx-large;
+}
+.coeur:hover{
+  animation: fill 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(354deg, #9356dc 19%, #ff79da 100%);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 button {
   background: #9356dc;
