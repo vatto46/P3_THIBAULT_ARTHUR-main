@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap");
 body {
-  min-width: 400px;
+  min-width: 378px;
   width: auto;
   margin: auto;
   font-family: "roboto", sans-serif;
@@ -17,7 +17,7 @@ header {
   margin-bottom: 0px;
 }
 header .logo {
-  width: 204px;
+  width: 276px;
   padding-top: 10px;
 }
 header .localisation {
@@ -98,7 +98,7 @@ section h2 {
   background-color: rgba(218, 218, 218, 0.301);
 }
 .liste .numero {
-  background-color: #9356dc;
+  background-color: #9256dc;
   text-align: center;
   width: 20px;
   height: 20px;
@@ -124,7 +124,7 @@ section h2 {
   justify-content: space-evenly;
 }
 .preparation a :hover{
-  background: rgba(144, 69, 236, 0.37);
+  background: #9256dc1c;
 }
 .preparation a :hover .fa-solid{
   color: #9356dc;

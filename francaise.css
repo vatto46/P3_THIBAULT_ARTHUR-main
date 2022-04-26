@@ -2,9 +2,11 @@
 @keyframes half-spin{
   0%{
     transform: rotate(-180deg);
+    opacity: 0;
   }
   100%{
     transform: rotate(0deg);
+    opacity: 1;
   }
 }
 @keyframes list{
@@ -18,7 +20,7 @@
   }
 }
 body {
-  min-width: 400px;
+  min-width: 290px;
   width: auto;
   margin: auto;
   font-family: "roboto", sans-serif;
@@ -72,32 +74,45 @@ header .titre .fleche {
   text-align: left;
 }
 .assiette {
+  display: flex;
+  justify-content: space-between;
   background-color: white;
-  margin-top: 10px;
+  margin-top: 15px;
   border-radius: 15px;
   padding: 10px;
   overflow: hidden;
   box-shadow: 2px 1px 8px -3px #00000080;
   animation: list 1s 0.5s;
 }
+.texte{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .assiette:hover .valider{
-  margin-right: -10px;
+  margin-right: -25px;
+  margin-left: 45px;
 }
 .assiette:hover .fa-regular{
   animation: half-spin 0.7s;
 }
+.assiette p{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .valider{
   background-color: #99e2d0;
-  margin: -35px -78px -10px 10px;
-  width: 68px;
-  height: 65px;
+  margin: -51px -86px -12px 31px;
+  width: 61px;
+  height: 67px;
   float: right;
-  border-radius: 0px 15px 15px 0px;
+  border-radius: 0px 13px 13px 0px;
   transition: all 0.5s;
 }
 .valider .fa-regular{
   margin: 15px;
-  color: #0dce9e;
+  color: #99e2d0;
   font-size: xx-large;
   background-color: white;
   border-radius: 100%;
@@ -108,8 +123,10 @@ header .titre .fleche {
 }
 .prix {
   float: right;
-  margin-top: -19px;
+  margin-top: 20px;
   font-weight: 600;
+  padding-right: 15px;
+  margin-left: 10px;
 }
 .surlignement {
   border-bottom: 2px solid #99e2d0;
@@ -135,9 +152,9 @@ h1 {
 footer {
   background-color: rgba(0, 0, 0, 0.767);
   color: white;
-  padding: 5px 0 20px 10px;
+  padding: 5px 0 30px 10px;
 }
-footer h3 {
+footer h2 {
   font-family: "Shrikhand", cursive;
   font-size: x-large;
 }
