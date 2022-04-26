@@ -82,7 +82,7 @@ header .titre .fleche {
   padding: 10px;
   overflow: hidden;
   box-shadow: 2px 1px 8px -3px #00000080;
-  animation: list 1s 0.5s;
+  animation: list 1.5s 200ms;
 }
 .texte{
   white-space: nowrap; 
@@ -94,7 +94,7 @@ header .titre .fleche {
   margin-left: 45px;
 }
 .assiette:hover .fa-regular{
-  animation: half-spin 0.7s;
+  animation: half-spin 700ms;
 }
 .assiette p{
   white-space: nowrap; 
