@@ -53,10 +53,11 @@ nav p{
   color: grey;
   margin-bottom: 45px;
 }
-nav .gradient {
+.gradient {
   background: #9356dc;
   background: linear-gradient(354deg, #9356dc 19%, #ff79da 100%);
   border-radius: 50px;
+  box-shadow: 2px 1px 8px -3px #00000080;
   padding: 15px 25px;
   color: white;
   font-family: "roboto";
@@ -64,6 +65,10 @@ nav .gradient {
   font-weight: 600;
   border: none;
   margin-top: 20px;
+}
+.gradient:hover{
+  box-shadow: 4px 2px 10px -3px #000000e5;
+  animation: bigger 0.5s forwards;
 }
 section {
   margin: 50px 0px 0px 0px;
@@ -125,25 +130,38 @@ section h2 {
 }
 .preparation a :hover{
   background: #9256dc1c;
+  animation: bigger 0.5s forwards;
+  box-shadow: 4px 2px 10px -3px #000000e5;
 }
 .preparation a :hover .fa-solid{
   color: #9356dc;
   background: none;
+  animation: bigger 0.5s forwards;
+  box-shadow: none;
 }
 a :hover .numero {
   background-color: #9356dc;
+  animation: bigger 0.5s forwards;
+  box-shadow: none;
 }
 .preparation a :hover p{
   color: black;
   background: none;
+  animation: bigger 0.5s forwards;
+  box-shadow: none;
 }
 .block_restaurant {
   margin-top: 40px;
   width: 380px;
   border-radius: 20px 20px 20px 20px;
+  box-shadow: 2px 1px 8px -3px #00000080;
   background-color: white;
   max-width: 550px;
   margin-left: 5px;
+}
+.block_restaurant:hover{
+  animation: bigger 0.5s forwards;
+  box-shadow: 4px 2px 10px -3px #000000e5;
 }
 .block_restaurant .image_restaurant {
   width: 100%;
@@ -169,6 +187,7 @@ a :hover .numero {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  animation: bigger 200ms forwards;
 }
 .coeur_hover{
   margin-top: 23px;
@@ -176,6 +195,7 @@ a :hover .numero {
   margin-right: 25px;
   border-color: black;
   background-color: white;
+  padding-left: 2px;
 }
 .nom{
   font-weight: bold;
@@ -224,5 +244,13 @@ footer .fa-solid {
 @keyframes spin{
   to{
     transform: rotate(360deg);
+  }
+}
+@keyframes bigger{
+  0%{
+    transform: scale(100%);
+  }
+  100%{
+    transform: scale(105%);
   }
 }
