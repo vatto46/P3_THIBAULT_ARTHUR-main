@@ -1,0 +1,22 @@
+{
+  "name": "p3_thibault_arthur-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css",
+    "prefix": "postcss ./style.css --use autoprefixer -d ./prefixed/style.css",
+    "prefix": "postcss ./restaurant.css --use autoprefixer -d ./prefixed/restaurant.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vatto46/P3_THIBAULT_ARTHUR-main.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/vatto46/P3_THIBAULT_ARTHUR-main/issues"
+  },
+  "homepage": "https://github.com/vatto46/P3_THIBAULT_ARTHUR-main#readme"
+}
